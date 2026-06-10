@@ -47,7 +47,7 @@ jobs:
     name: Run shift-left and Deploy Workflows
     uses: s1line1/actions-workflows/.github/workflows/shift-left.yml@main
     with:
-      acr-name: "github-actions-demo"
+      APP_NAME: "github-actions-demo"
       run-number: ${{ github.event.number || 0 }}
       tag-sha: ${{ github.sha }}
       OSS_ENDPOINT: oss-cn-shanghai.aliyuncs.com
