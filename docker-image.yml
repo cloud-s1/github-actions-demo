@@ -8,4 +8,5 @@ images:
     dockerfile: cicd/Dockerfile
     registry: crpi-notabmu0yl0rr8sv.cn-shanghai.personal.cr.aliyuncs.com
     namespace: s1line1-test
+    region_id: cn-shanghai
     
