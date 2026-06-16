@@ -4,12 +4,15 @@ run-name: >-
   || (github.event_name == 'push' && format('Push CD Actions Workflows {0} by {1} -> main', github.event.push.title, github.actor)) }}
 
 on:
-  pull_request:
-    branches:
-      - main
-  push:
-    branches:
-      - main
+  # pull_request:
+  #   branches:
+  #     - main
+  # push:
+  #   branches:
+  #     - main
+
+  workflow_call:
+    
 
 permissions:
   contents: read
